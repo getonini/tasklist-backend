@@ -1,0 +1,15 @@
+CREATE DATABASE db_tasks;
+
+USE `db_tasks`;
+
+CREATE TABLE `task` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(200) DEFAULT NULL,
+  `status` BOOLEAN DEFAULT FALSE,
+  `description` VARCHAR(200) DEFAULT NULL,
+  `creationDate` DATE DEFAULT NULL,
+  `lastUpdateDate` DATE DEFAULT NULL,
+  `conclusionDate` DATE DEFAULT NULL,
+  `exclusionDate` DATE DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
